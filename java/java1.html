@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function doit() {
+            alert("Мне нравится " + document.figure.fname.value + " " + "Цвета " + document.color.lname.value)
+            alert("Количество букв в вашей фигуре " + document.figure.fname.value.length)
+        }
+    </script>
+</head>
+
+<body>
+    <form name="figure">
+        Какая фигура вам нравится?
+        <input type="text" name="fname">
+        <p>
+    </form>
+    <form name="color">
+        Какой цвет вам нравится?
+        <input type="text" name="lname">
+        <p>
+            <input type="button" value="отправить" onClick="doit()">
+    </form>
+
+
+</body>
+
+</html>
