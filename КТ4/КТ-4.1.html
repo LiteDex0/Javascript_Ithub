@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        const number = prompt('Введите цвет с маленькой буквы, чтобы узнать диапазон длинн волн');
+        switch (number) {
+            case 'фиолетовый':
+                alert('<= 450');
+                break;
+            case 'синий':
+                alert('Длинна волны 440-480');
+                break;
+            case 'сине-зеленый':
+                alert('Длинна волны 480-510');
+                break;
+            case 'зеленый':
+                alert('Длинна волны 510-550');
+                break;
+            case 'желто-зеленый':
+                alert('Длинна волны 550-570');
+                break;
+            case 'желтый':
+                alert('Длинна волны 570-590');
+                break;
+            case 'оранжевый':
+                alert('Длинна волны 590-630');
+                break;
+            case 'красный':
+                alert('Длинна волны <=630');
+                break;
+            default:
+                alert('Неверный формат');
+        }
+    </script>
+
+</body>
+
+</html>
