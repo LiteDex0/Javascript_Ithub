@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function F(obj) {
+            num = obj.text1.value;
+            fio =obj.text2.value;
+            result_FIO = fio.match(/[А-Я][а-я]+\s[А-Я][а-я]+\s[А-Я][а-я]+/);
+            result_num = num.match(/\d{4}[-]\d{3}[-]\d\d[-]\d\d/g);
+            if (result_FIO == null) {
+                alert("Фамилия введена неверно");
+            } else {
+                if (result_num == null) {
+                    alert("Номер телефона введен неверно");
+                } else {
+                    console.log("Данные введены верно");
+                }
+
+            }
+        }
+    </script>
+</head>
+
+
+<script>
+        'use srict'
+        let str;
+        //result_num = str.match(/\d{4}[-]\d{3}[-]\d\d[-]\d\d/g);
+        //result_FIO = str.match(/[А-Я][а-я]+\s[А-Я][а-я]+\s[А-Я][а-я]+/);
+        // Иванов Иван Иванович
+        //7654-787-90-09
+       
+    </script>
+           <p class="txt1"> Форма ввода и проверка данных</p>
+                <form name = "Form">
+                    <p class="num">Номер телефона:</p> <input name="text1" type="text"><br>
+                        <p class="num">ФИО:</p> <input name="text2" type="text"><br>
+                            <input type="button" value="Отправить" onClick="F(Form)"><br>
+                </form>
+                           
+</body>
+</html>
